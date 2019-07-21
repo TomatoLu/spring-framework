@@ -66,7 +66,7 @@ public class XmlBeanDefinitionReaderTests {
 	}
 
 	@Test
-	public void withImport() {
+	public void withImport() {//运行不了
 		SimpleBeanDefinitionRegistry registry = new SimpleBeanDefinitionRegistry();
 		Resource resource = new ClassPathResource("import.xml", getClass());
 		new XmlBeanDefinitionReader(registry).loadBeanDefinitions(resource);
